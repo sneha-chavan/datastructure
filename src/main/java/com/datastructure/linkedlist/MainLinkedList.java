@@ -8,17 +8,33 @@ public class MainLinkedList {
 	public static void main(String[] args) {
 		SpringApplication.run(MainLinkedList.class, args);
 		LinkedList linkedList = new LinkedList();
+		LinkedList linkedListAppend = new LinkedList();
 		
 		//adding data infront
-//		linkedList.add(70);
-//		linkedList.add(30);
-//		linkedList.add(56);
+		linkedListAppend.append(56);
+		linkedListAppend.append(30);
+		linkedListAppend.append(70);
+		linkedListAppend.append(40);
 		
 		//append data
-		linkedList.append(56);
-		linkedList.append(30);
-		linkedList.append(70);
-		linkedList.append(40);
+		linkedList.add(70);
+		linkedList.add(30);
+		linkedList.add(56);
+		linkedList.add(76);
+		
+		
+		
+		
+		//insert data between two node
+		linkedListAppend.insert(56, 30, 65);
+		
+		//displaying all nodes
+		linkedListAppend.displayAppendNodes();
+		linkedList.displayAppendNodes();
+		System.out.println("-------------");
+		//linkedList.delete();
+		linkedList.displayAppendNodes();
+		
 	}
 
 }
