@@ -19,7 +19,7 @@ public class StackOperations {
 	
 	//display all values in stack
 	public void display() {
-		System.out.println("Stack values");
+		System.out.println("Values: ");
 		Stack temp = head;
 		while(temp != null) {
 			System.out.println(temp.getData());
