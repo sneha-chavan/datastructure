@@ -10,9 +10,15 @@ public class MainLinkedList {
 		LinkedList linkedList = new LinkedList();
 		
 		//adding data infront
-		linkedList.add(70);
-		linkedList.add(30);
-		linkedList.add(56);
+//		linkedList.add(70);
+//		linkedList.add(30);
+//		linkedList.add(56);
+		
+		//append data
+		linkedList.append(56);
+		linkedList.append(30);
+		linkedList.append(70);
+		linkedList.append(40);
 	}
 
 }

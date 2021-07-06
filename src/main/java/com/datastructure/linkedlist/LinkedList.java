@@ -20,8 +20,19 @@ public class LinkedList {
 		Node tempNode = head;
 		head = newNode;
 		tempNode.next = head;
-		System.out.println("head: "+head.data);
-		System.out.println("tail: "+tail.data);
 	}
 	
+	//appending data
+	public void append(int data) {
+		Node newNode = new Node();
+		newNode.data = data;
+		newNode.next=null;
+		if(head == null && tail== null) {
+			head = newNode;
+			tail = newNode;
+		}
+		Node tempNode = tail;
+		tail = newNode;
+		tempNode.next = tail;
+	}
 }
