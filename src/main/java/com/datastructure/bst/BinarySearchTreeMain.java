@@ -17,7 +17,14 @@ public class BinarySearchTreeMain {
 		binaryTree.add(65);
 		binaryTree.add(63);
 		binaryTree.add(67);
-
+		
+		//size of tree- total number of nodes
+		int size =binaryTree.size();
+		System.out.println("total nodes "+size);
+		
+		//search a node if present
+		Boolean isExist = binaryTree.search(94);
+		System.out.println(isExist);
 	}
 
 }

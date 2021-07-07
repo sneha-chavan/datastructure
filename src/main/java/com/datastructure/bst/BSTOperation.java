@@ -22,4 +22,39 @@ public class BSTOperation<K extends Comparable<K>> {
 		}
 	return root;
 	}
+	
+	//get Size
+	int size()
+    {
+        return size(root);
+    }
+  
+    
+    int size(Node node)
+    {
+        if (node == null)
+            return 0;
+        else
+            return(size(node.left) + 1 + size(node.right));
+    }
+    
+    public boolean search(K data) {
+    	boolean exist = this.isNodeExist(root, data);
+    	return exist;
+    }
+    
+    public boolean isNodeExist(Node<K> root, K data) {  	
+    	if(root == null) {
+    		return false;
+    	}
+    	if(root.data == data) {
+    		return true;
+    	}
+    	boolean isPresentAtLeft = isNodeExist(root.left, data);
+    	if(isPresentAtLeft)
+    		return isPresentAtLeft;
+    	
+    	boolean isPresentAtRight = isNodeExist(root.right, data);
+    	return isPresentAtRight;
+    }
 }
